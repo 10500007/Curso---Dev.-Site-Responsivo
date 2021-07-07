@@ -1,0 +1,32 @@
+.pagina-cabecalho {
+    color: white;
+    background-color: $cor-principal;
+   // background-image: url(img/cabecalho-pagina-bg.jpg);
+   background-image: url(../../img/cabecalho-pagina-bg.jpg);  
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.pagina-cabecalho__titulo {
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.pagina-cabecalho__titulo::after {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 50px;
+    content: "";
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cnc {
+    margin-left: -15px;
+    margin-right: -15px;
+}

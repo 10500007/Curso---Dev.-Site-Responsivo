@@ -1,0 +1,94 @@
+.cabecalho-home {
+    background: url(imagens/img/cabecalho-home-bg.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.cabecalho-home__titulo {
+    font-size: 40px;
+    margin-bottom: 0;
+
+}
+
+.cabecalho-home__role {
+    display: none;
+}
+
+.home__titulo {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.home__titulo::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+.home__titulo--branco::after {
+    background-color: #fff;
+}
+
+.servico {
+    padding: 30px 0px;
+}
+
+.servico__item {
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.servicos__texto {
+    color: #585858;
+    line-height: 21px;
+}
+
+.depoimentos {
+    background-color: #dd3f3f;
+    background-image: url(imagens/img/cabecalho-pagina-bg.jpg);
+    background-attachment: fixed;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.depoimentos__item {
+    padding: 0px 15px;
+}
+
+.depoimentos__img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 0 black;
+    margin-bottom: 30px;
+}
+
+.depoimentos__pessoa {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.depoimentos__texto {
+    line-height: 23px;
+}
+
+.depoimentos__texto::before {
+    background-image: url(imagens/img/aspas.png);
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 23px;
+    margin-right: 5px;
+
+
+
+}

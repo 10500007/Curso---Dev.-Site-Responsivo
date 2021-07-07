@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../Desenvolvimento Responsivo - HTML-CSS-JS sem os PSD/sass/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="primeironome">Primeiro Nome <input id="primeironome" type="text"></label>
+        </div>
+        <div>
+            <label for="receberemail">Deseja receber emails de promoções? <input id="receberemail" type="checkbox" name="receberemails"></label>
+        </div>
+        <div>
+            <label for="masc">
+                <input id="masc" type="radio" name="sexo" value="masculino">Masculino
+            </label><br>
+            <label for="femi">
+                <input id="femi" type="radio" name="sexo" value="feminino">Feminino
+            </label><br>
+            <label for="outro">
+                <input id="outro" type="radio" name="sexo" value="outros">Outros
+            </label><br>
+            <label for="cidade"> Cidade </label><br>
+                <select name="cidade" id="cidade">
+                <option value="nada"></option>
+                <option value="sao-paulo">São Paulo</option>
+                <option value="rio">Rio de Janeiro</option>
+                </select><br>
+            <label for="obs">Observações</label><br>
+            <textarea name="obs" id="obs" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+        
+
+    </form>
+</body>
+</html>

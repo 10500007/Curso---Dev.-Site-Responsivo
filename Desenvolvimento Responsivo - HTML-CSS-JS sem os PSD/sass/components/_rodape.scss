@@ -1,0 +1,99 @@
+.rodape{
+    padding: 0px 0px;
+}
+.rodape .logo {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.rodape__linha-1 {
+    background-color: #272525;
+    padding: 15px 25px;
+    background-image: url(imagens/img/rodape-bg.jpg);
+    background-size: cover;
+
+}
+
+.rodape__linha-2 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.rodape_coluna {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.rodape_titulo {
+    border-bottom: 1px solid #fff;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+}
+
+.rodape_lista {
+    padding: 0%;
+    list-style: none;
+}
+
+.lista_item {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lista_item::before {
+    content: '>';
+    margin-right: 8px;
+    color: $cor-principal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagina-conteudo {
+
+    padding: 25px 15px 25px 15px;
+
+}
+
+.pagina-conteudo p {
+    color: $cor-leitura;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lista-trabalhos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-trabalhos__item {
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.lista-trabalhos__item a {
+    text-decoration: none;
+}
+
+.lista-trabalhos__titulos {
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid #000;
+    padding-left: 15px;
+}

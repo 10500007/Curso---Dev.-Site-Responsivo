@@ -1,0 +1,22 @@
+.lista-trabalhos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-trabalhos__item {
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 50px;
+}
+
+.lista-trabalhos__item a {
+    text-decoration: none;
+}
+
+.lista-trabalhos__titulos {
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid #000;
+    padding-left: 15px;
+}
