@@ -5,31 +5,23 @@
     padding-right: 15px;
     // border: 1px solid red;
 
-}
-
-
-@media (min-width: $breakpoint-sm) {
-    .container {
+    @media (min-width: $breakpoint-sm) {
         width: 540px;
-        //border: 1px solid red;
+        //border: 1px solid red;  
     }
-}
 
-@media (min-width: $breakpoint-md) {
-    .container {
+    @media (min-width: $breakpoint-md) {
         width: 720px;
-        //border: 1px solid blue;
+        //border: 1px solid blue;  
     }
-}
 
-@media (min-width: $breakpoint-lg) {
-    .container {
+    @media (min-width: $breakpoint-lg) {
         width: 960px;
     }
-}
 
-@media (min-width:$breakpoint-xl) {
-    .container {
+    @media (min-width:$breakpoint-xl) {
+
         width: 1140px;
     }
+
 }

@@ -750,7 +750,6 @@ img {
 
 .cabecalho-home {
   background: url(imagens/img/cabecalho-home-bg.jpg);
-  background-attachment: fixed;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -792,6 +791,12 @@ img {
 
 .home__titulo__titulo--branco::after {
   background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .cabecalho-home {
+    height: 100vh;
+  }
 }
 
 .lista-trabalhos {
