@@ -626,17 +626,15 @@ img {
 
 .servico {
   padding: 30px 0px; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .servico {
-      width: 960px;
       overflow: auto; } }
 
 .servico__item {
   text-align: center;
   padding: 0px 15px; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .servico__item {
-      width: 960px;
       float: left;
       width: 33.333%; } }
 
