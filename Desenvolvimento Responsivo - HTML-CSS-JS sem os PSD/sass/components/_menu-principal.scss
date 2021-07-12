@@ -8,7 +8,7 @@
     border-style: solid;
     border-radius: 5px;
     background-image: url(img/menuprincipal-btn-bg.png);
-   // background-image: url(../../img/menuprincipal-btn-bg.png);
+    // background-image: url(../../img/menuprincipal-btn-bg.png);
     background-repeat: no-repeat;
     background-position: 5px 5px;
     cursor: pointer;
@@ -25,11 +25,19 @@
 .menu-principal__lista {
     margin-left: 15px;
     padding: 0%;
+
+    @media(min-width: $breakpoint-md) {
+        li {
+            display: inline-block;
+        }
+    }
 }
 
 .menu-principal__lista li {
 
     list-style: none;
+
+
 }
 
 .menu-principal__item {
@@ -39,8 +47,12 @@
     font-weight: bold;
     color: #343434;
     font-size: 18px;
+
+
 }
 
 .menu-principal__item--atual {
     color: $cor-principal;
+
+
 }
