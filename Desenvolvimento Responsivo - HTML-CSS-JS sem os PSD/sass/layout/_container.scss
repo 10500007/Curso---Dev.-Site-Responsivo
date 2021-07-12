@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    overflow: auto;
     // border: 1px solid red;
 
     @media (min-width: $breakpoint-sm) {
