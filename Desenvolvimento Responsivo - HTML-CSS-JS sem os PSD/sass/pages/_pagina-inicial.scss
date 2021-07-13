@@ -7,7 +7,11 @@
     text-align: center;
     padding: 50px 0px;
 
+    @media(min-width:$breakpoint-lg) {
 
+        height: 100vh;
+
+    }
 
     &__titulo {
         font-size: 30px;
@@ -30,7 +34,7 @@
 .home__titulo {
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 
     &__titulo::after {
         content: '';
@@ -38,7 +42,7 @@
         width: 50px;
         height: 3px;
         background-color: $cor-principal;
-        margin: 0 auto;
+        margin: 0px auto;
         margin-top: 15px;
     }
 
@@ -47,9 +51,12 @@
     }
 }
 
-@media(min-width:$breakpoint-lg) {
-    .cabecalho-home {
-        //border: 1px solid red;
-        height: 100vh;
-    }
+.home__titulo::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: $cor-principal;
+    margin: 0px auto;
+    margin-top: 15px;
 }

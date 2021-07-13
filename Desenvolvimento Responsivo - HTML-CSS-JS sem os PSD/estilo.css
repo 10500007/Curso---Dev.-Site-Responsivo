@@ -567,6 +567,12 @@ template {
   right: 15px;
 }
 
+@media (min-width: 768px) {
+  .menu-principal__btn {
+    display: none;
+  }
+}
+
 .menu-principal__btn--fechar {
   background-position: -50px 7px;
 }
@@ -579,6 +585,7 @@ template {
 @media (min-width: 768px) {
   .menu-principal__lista li {
     display: inline-block;
+    margin: 0px 10px;
   }
 }
 
@@ -778,6 +785,12 @@ img {
   padding: 50px 0px;
 }
 
+@media (min-width: 992px) {
+  .cabecalho-home {
+    height: 100vh;
+  }
+}
+
 .cabecalho-home__titulo {
   font-size: 30px;
   margin-bottom: 0;
@@ -798,7 +811,7 @@ img {
 .home__titulo {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .home__titulo__titulo::after {
@@ -807,7 +820,7 @@ img {
   width: 50px;
   height: 3px;
   background-color: #f44242;
-  margin: 0 auto;
+  margin: 0px auto;
   margin-top: 15px;
 }
 
@@ -815,10 +828,14 @@ img {
   background-color: #fff;
 }
 
-@media (min-width: 992px) {
-  .cabecalho-home {
-    height: 100vh;
-  }
+.home__titulo::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f44242;
+  margin: 0px auto;
+  margin-top: 15px;
 }
 
 .lista-trabalhos {
