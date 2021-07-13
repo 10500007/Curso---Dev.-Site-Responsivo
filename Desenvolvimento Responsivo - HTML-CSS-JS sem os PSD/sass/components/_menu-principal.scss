@@ -20,14 +20,12 @@
     @media(min-width: $breakpoint-md) {
         display: none;
     }
-    
+
+
+
 }
 
-@media(max-width: $breakpoint-md){
-    .fechado{
-            background-position: -47px 7px;
-    }
-}
+
 
 /*.menu-principal__btn--fechar {
     background-position: -50px 7px;
@@ -59,10 +57,33 @@
     font-weight: bold;
     color: #343434;
     font-size: 18px;
-
-
 }
+
 
 .menu-principal__item--atual {
     color: $cor-principal;
+}
+
+
+@media(max-width: $breakpoint-md) {
+    .fechado {
+        background-position: -47px 7px;
+
+        .menu-principal__btn {
+            margin: 0;
+        }
+
+        .menu-principal__lista {
+            margin: 0;
+            height: 5px;
+        }
+
+        .menu-principal__item {
+            margin: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+
 }
