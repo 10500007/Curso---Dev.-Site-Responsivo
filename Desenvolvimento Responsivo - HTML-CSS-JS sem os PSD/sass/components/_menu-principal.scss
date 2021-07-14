@@ -30,8 +30,9 @@
     }
 
     &__lista {
-        margin-left: 15px;
+        // margin-left: 15px;
         padding: 0%;
+        transition: margin 300ms ease-out;
 
         @media(min-width: $breakpoint-md) {
             li {
@@ -42,7 +43,7 @@
     }
 
     &__lista li {
-
+        margin-left: 15px;
         list-style: none;
 
 
@@ -51,10 +52,13 @@
     &__item {
         margin-bottom: 20px;
         display: block;
+        //height: 20px;
         text-decoration: none;
         font-weight: bold;
         color: #343434;
         font-size: 18px;
+        transition: all 300ms ease-out;
+
     }
 
     &__item--atual {
@@ -64,8 +68,6 @@
     @media(max-width: $breakpoint-md - 1) {
         &--fechado {
             .menu-principal__btn {
-
-                margin-top: -4px;
                 // background-position: -47px 7px;
                 background-position: 5px 5px;
 
@@ -73,13 +75,15 @@
 
             .menu-principal__lista {
                 margin: 0;
-                height: 5px;
+                height: 10px;
+
             }
 
             .menu-principal__item {
                 margin: 0;
                 height: 0;
                 overflow: hidden;
+
             }
         }
     }

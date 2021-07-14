@@ -8,11 +8,13 @@
         padding: 150px;
     }
 
+    /*
     @media(max-width: $breakpoint-md) {
         & {
             height: 70px;
         }
     }
+    */
 
     @media(min-width:$breakpoint-md) {
         min-height: 100px;
