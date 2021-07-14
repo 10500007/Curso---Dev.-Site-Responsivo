@@ -1,89 +1,86 @@
-.menu-principal__btn {
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-indent: -9999px;
-    background-color: #fff;
-    border-color: #c4c4c4;
-    border-style: solid;
-    border-radius: 5px;
-    background-image: url(img/menuprincipal-btn-bg.png);
-    // background-image: url(../../img/menuprincipal-btn-bg.png);
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    cursor: pointer;
+.menu-principal {
 
-    position: absolute;
-    top: 15px;
-    right: 15px;
-
-    @media(min-width: $breakpoint-md) {
-        display: none;
-    }
-
-
-
-}
-
-
-
-/*.menu-principal__btn--fechar {
-    background-position: -50px 7px;
-}*/
-
-.menu-principal__lista {
-    margin-left: 15px;
-    padding: 0%;
-
-    @media(min-width: $breakpoint-md) {
-        li {
-            display: inline-block;
-            margin: 0px 10px;
-        }
-    }
-}
-
-.menu-principal__lista li {
-
-    list-style: none;
-
-
-}
-
-.menu-principal__item {
-    margin-bottom: 20px;
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    color: #343434;
-    font-size: 18px;
-}
-
-
-.menu-principal__item--atual {
-    color: $cor-principal;
-}
-
-
-@media(max-width: $breakpoint-md) {
-    .fechado {
+    &__btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        background-color: #fff;
+        border-color: #c4c4c4;
+        border-style: solid;
+        border-radius: 5px;
+        background-image: url(img/menuprincipal-btn-bg.png);
+        // background-image: url(../../img/menuprincipal-btn-bg.png);
+        background-repeat: no-repeat;
         background-position: -47px 7px;
+        //background-position: 5px 5px;
+        cursor: pointer;
 
-        .menu-principal__btn {
-            margin: 0;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+
+
+
+        @media(min-width: $breakpoint-md) {
+            display: none;
         }
 
-        .menu-principal__lista {
-            margin: 0;
-            height: 5px;
-        }
+    }
 
-        .menu-principal__item {
-            margin: 0;
-            height: 0;
-            overflow: hidden;
+    &__lista {
+        margin-left: 15px;
+        padding: 0%;
+
+        @media(min-width: $breakpoint-md) {
+            li {
+                display: inline-block;
+                margin: 0px 10px;
+            }
         }
     }
 
+    &__lista li {
+
+        list-style: none;
+
+
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        color: #343434;
+        font-size: 18px;
+    }
+
+    &__item--atual {
+        color: $cor-principal;
+    }
+
+    @media(max-width: $breakpoint-md -1) {
+        &--fechado {
+            .menu-principal__btn {
+                margin: 0;
+                // background-position: -47px 7px;
+                background-position: 5px 5px;
+
+            }
+
+            .menu-principal__lista {
+                margin: 0;
+                height: 5px;
+            }
+
+            .menu-principal__item {
+                margin: 0;
+                height: 0;
+                overflow: hidden;
+            }
+        }
+    }
 
 }
