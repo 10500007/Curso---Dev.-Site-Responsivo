@@ -7,9 +7,11 @@
     text-indent: -9999px;
     margin: 0;
     margin-left: 15px;
+    transition: all 400ms ease-out;
 
     @media(max-width: $breakpoint-md) {
         margin-top: 5px;
+       
     }
 }
 
