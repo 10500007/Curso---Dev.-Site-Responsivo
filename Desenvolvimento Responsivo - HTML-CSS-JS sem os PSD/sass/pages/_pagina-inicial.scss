@@ -9,18 +9,21 @@
     padding-top: 150px;
 
     &__role {
-        display: none;        
+        display: none;
     }
+
     &__titulo {
         font-size: 30px;
         margin-bottom: 0;
     }
+
     &__subtitulo {
         display: block;
         font-size: 15px;
         padding: 5px;
         max-width: 80%;
         margin: auto;
+        margin-top: 10px;
     }
 
     @media(min-width:$breakpoint-lg) {
@@ -32,9 +35,12 @@
         &__titulo {
             font-size: 60px;
             margin-bottom: 0;
+            margin-top: 300px;
         }
-        &__subtitulo{
+
+        &__subtitulo {
             font-size: 22px;
+            margin-top: 25px;
         }
 
         &__role {
@@ -62,9 +68,9 @@
 
     }
 
-   
 
-   
+
+
 
 
 }
