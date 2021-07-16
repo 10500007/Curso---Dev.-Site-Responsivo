@@ -445,6 +445,16 @@ template {
   }
 }
 
+#servicos {
+  scroll-behavior: smooth;
+}
+
+/*
+html {
+    scroll-behavior: smooth;
+
+}
+*/
 .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -842,9 +852,36 @@ img {
   padding-top: 150px;
 }
 
+.cabecalho-home__role {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .cabecalho-home {
     height: 100vh;
+    background: url(imagens/img/cabecalho-home-bg-md.jpg);
+    background-size: cover;
+  }
+  .cabecalho-home__role {
+    display: block;
+    width: 200px;
+    height: 70px;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    background: url(imagens/img/icone-mouse.png) no-repeat center right;
+    bottom: 50px;
+    left: 50%;
+    line-height: 70px;
+    margin-left: -115px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cabecalho-home {
+    background-image: url(imagens/img/cabecalho-home-bg-xl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -861,10 +898,6 @@ img {
   margin: auto;
 }
 
-.cabecalho-home__role {
-  display: none;
-}
-
 .home__titulo {
   text-align: center;
   text-transform: uppercase;
@@ -876,7 +909,7 @@ img {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #f44242;
+  background-color: #fff;
   margin: 0px auto;
   margin-top: 15px;
 }

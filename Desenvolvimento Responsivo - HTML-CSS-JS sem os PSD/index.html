@@ -42,7 +42,7 @@
           <header class="cabecalho-home cnc">
               <h2 class="cabecalho-home__titulo">Desenvolvimento Responsivo</h2>
               <p class="cabecalho-home__subtitulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum cumque </p>
-              <a class="cabecalho-home_role" href="#servicos">Role para ver mais</a>
+              <a class="cabecalho-home__role" href="#servicos">Role para ver mais</a>
           </header>
 <!--Seção de serviços-->
 
@@ -116,5 +116,23 @@
          </div>
         
     </footer>
+
+   <script>
+
+       function scrollTo(element){
+        document.querySelector(element).scrollIntoView({behavior: "smooth"});
+        }
+
+        document.querySelector('.cabecalho-home__role').addEventListener("click", function(event){
+        event.preventDefault();
+           
+
+        scrollTo('#servicos', 1000)
+
+        
+});
+
+        
+   </script>
 </body>
 </html>
