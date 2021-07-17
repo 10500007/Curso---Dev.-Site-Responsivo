@@ -512,24 +512,10 @@ html {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-  .depoimentos__img {
-    float: left;
-    margin-right: 15px;
-  }
-}
-
 .depoimentos__pessoa {
   text-align: center;
   font-weight: bold;
   font-style: italic;
-}
-
-@media (min-width: 768px) {
-  .depoimentos__pessoa {
-    float: left;
-    margin-right: 15px;
-  }
 }
 
 .depoimentos__pessoa::before {
@@ -552,6 +538,24 @@ html {
   width: 25px;
   height: 23px;
   margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .depoimentos {
+    padding: 150px 0px;
+  }
+  .depoimentos__img {
+    float: left;
+    margin-right: 15px;
+  }
+  .depoimentos__pessoa {
+    float: left;
+    margin-right: 15px;
+  }
+  .depoimentos__item {
+    max-width: 750px;
+    margin: 0 auto;
+  }
 }
 
 .pag_contato {
@@ -779,6 +783,14 @@ html {
 .rodape_lista {
   padding: 0%;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .rodape_coluna {
+    float: left;
+    width: 33.33%;
+    padding: 0px 15px;
+  }
 }
 
 .lista_item {

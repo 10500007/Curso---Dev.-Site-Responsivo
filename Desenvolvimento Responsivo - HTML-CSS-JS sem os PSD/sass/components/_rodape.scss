@@ -1,41 +1,52 @@
-.rodape{
+.rodape {
     padding: 0px 0px;
-}
-.rodape .logo {
-    color: white;
-    margin-bottom: 20px;
-}
 
-.rodape__linha-1 {
-    background-color: #272525;
-    padding: 15px 25px;
-    background-image: url(imagens/img/rodape-bg.jpg);
-    background-size: cover;
-    
 
-}
+    .logo {
+        color: white;
+        margin-bottom: 20px;
+    }
 
-.rodape__linha-2 {
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    color: white;
-    padding: 15px;
-}
+    &__linha-1 {
+        background-color: #272525;
+        padding: 15px 25px;
+        background-image: url(imagens/img/rodape-bg.jpg);
+        background-size: cover;
 
-.rodape_coluna {
-    margin-top: 30px;
-    color: #fff;
-}
 
-.rodape_titulo {
-    border-bottom: 1px solid #fff;
-    padding: 0 10px 10px 10px;
-    font-size: 18px;
-}
+    }
 
-.rodape_lista {
-    padding: 0%;
-    list-style: none;
+    &__linha-2 {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        color: white;
+        padding: 15px;
+    }
+
+    &_coluna {
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    &_titulo {
+        border-bottom: 1px solid #fff;
+        padding: 0 10px 10px 10px;
+        font-size: 18px;
+    }
+
+    &_lista {
+        padding: 0%;
+        list-style: none;
+    }
+
+    @media(min-width: $breakpoint-md) {
+        &_coluna {
+            float: left;
+            width: 33.33%;
+            padding: 0px 15px;
+        }
+    }
+
 }
 
 .lista_item {
@@ -99,6 +110,6 @@ img {
     padding-left: 15px;
 }
 
-.margem_mapa{
+.margem_mapa {
     margin-top: 25px;
 }

@@ -9,7 +9,6 @@
     &__item {
         padding: 0px 15px;
 
-
     }
 
 
@@ -20,10 +19,7 @@
         box-shadow: 2px 2px 0 black;
         margin-bottom: 30px;
 
-        @media(min-width: $breakpoint-md) {
-            float: left;
-            margin-right: 15px;
-        }
+
     }
 
     &__pessoa {
@@ -31,10 +27,7 @@
         font-weight: bold;
         font-style: italic;
 
-        @media(min-width: $breakpoint-md) {
-            float: left;
-            margin-right: 15px;
-        }
+
 
         &::before {
             content: "";
@@ -63,6 +56,29 @@
 
     }
 
+    @media(min-width: $breakpoint-md) {
+        padding: 150px 0px;
+
+        &__img {
+            float: left;
+            margin-right: 15px;
+        }
+
+        &__pessoa {
+            float: left;
+            margin-right: 15px;
+        }
+
+        &__item {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+
+
+
+
+    }
 
 
 }
