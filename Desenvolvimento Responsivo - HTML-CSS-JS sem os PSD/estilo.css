@@ -11,7 +11,7 @@ img {
 body {
   font-family: "Source Sans Pro";
   overflow-x: hidden;
-  padding: 0px 15px;
+  padding: 0 15px;
 }
 
 header {
@@ -488,6 +488,14 @@ html {
   }
 }
 
+@media (min-width: 768px) {
+  .img-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 .text-center {
   text-align: center;
 }
@@ -704,6 +712,7 @@ html {
 .pagina-cabecalho {
   color: white;
   background-color: #f44242;
+  overflow: auto;
   background-image: url(imagens/img/cabecalho-pagina-bg.jpg);
   padding-top: 130px;
   padding-bottom: 40px;
@@ -736,6 +745,15 @@ html {
   padding: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .pagina-conteudo {
+    overflow: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-height: 900px;
+  }
 }
 
 .pagina-conteudo p {

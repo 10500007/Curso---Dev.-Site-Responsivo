@@ -1,7 +1,7 @@
 .pagina-cabecalho {
     color: white;
     background-color: $cor-principal;
-
+    overflow: auto;
     background-image: url(imagens/img/cabecalho-pagina-bg.jpg);
     padding-top: 130px;
     padding-bottom: 40px;
