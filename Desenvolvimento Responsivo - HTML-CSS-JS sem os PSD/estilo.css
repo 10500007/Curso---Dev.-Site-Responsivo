@@ -791,6 +791,12 @@ html {
     width: 33.33%;
     padding: 0px 15px;
   }
+  .rodape__linha-1 {
+    background-color: #272525;
+    padding: 15px 25px;
+    background-image: url(imagens/img/rodape-bg-xl.jpg);
+    background-size: cover;
+  }
 }
 
 .lista_item {

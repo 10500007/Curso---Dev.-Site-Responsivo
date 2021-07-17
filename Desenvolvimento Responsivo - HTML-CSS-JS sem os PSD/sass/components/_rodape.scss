@@ -11,6 +11,9 @@
         background-color: #272525;
         padding: 15px 25px;
         background-image: url(imagens/img/rodape-bg.jpg);
+        // background-image: url(imagens/img/rodape-bg-md.jpg);
+
+        //background-repeat: no-repeat;
         background-size: cover;
 
 
@@ -39,12 +42,25 @@
         list-style: none;
     }
 
+
+
     @media(min-width: $breakpoint-md) {
         &_coluna {
             float: left;
             width: 33.33%;
             padding: 0px 15px;
         }
+
+        &__linha-1 {
+            background-color: #272525;
+            padding: 15px 25px;
+            background-image: url(imagens/img/rodape-bg-xl.jpg);
+            background-size: cover;
+
+
+        }
+
+
     }
 
 }
