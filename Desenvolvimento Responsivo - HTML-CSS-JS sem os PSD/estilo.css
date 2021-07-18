@@ -492,6 +492,7 @@ html {
 @media (min-width: 768px) {
   .img-left {
     float: left;
+    padding: 9px 0 0 0;
     margin-right: 15px;
     margin-bottom: 15px;
   }
@@ -749,16 +750,20 @@ html {
   overflow: auto;
 }
 
-@media (min-width: 768px) {
-  .pagina-conteudo {
-    overflow: auto;
-    margin-left: 50px;
-    margin-right: 50px;
+@media (min-width: 1200px) {
+  .pagina-conteudo .pagina-conteudo-2 {
+    margin: auto;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
-.pagina-conteudo-2 {
-  overflow: auto;
+@media (min-width: 768px) {
+  .pagina-conteudo .pagina-conteudo-2 {
+    margin: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .pagina-conteudo p {
@@ -767,6 +772,10 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.par {
+  padding: 4px;
 }
 
 .rodape {
