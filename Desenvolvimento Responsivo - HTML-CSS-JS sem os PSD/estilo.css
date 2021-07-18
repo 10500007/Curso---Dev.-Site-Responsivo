@@ -12,6 +12,7 @@ body {
   font-family: "Source Sans Pro";
   overflow-x: hidden;
   padding: 0 15px;
+  height: 100%;
 }
 
 header {
@@ -745,6 +746,7 @@ html {
   padding: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
+  overflow: auto;
 }
 
 @media (min-width: 768px) {
@@ -752,8 +754,11 @@ html {
     overflow: auto;
     margin-left: 50px;
     margin-right: 50px;
-    max-height: 900px;
   }
+}
+
+.pagina-conteudo-2 {
+  overflow: auto;
 }
 
 .pagina-conteudo p {
@@ -997,6 +1002,7 @@ img {
 .lista-trabalhos {
   list-style: none;
   padding: 0;
+  overflow: hidden;
 }
 
 .lista-trabalhos__item {

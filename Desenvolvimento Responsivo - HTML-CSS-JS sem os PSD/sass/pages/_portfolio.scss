@@ -1,12 +1,14 @@
 .lista-trabalhos {
     list-style: none;
     padding: 0;
+    overflow: hidden;
 }
 
 .lista-trabalhos__item {
     margin-left: -25px;
     margin-right: -25px;
     margin-bottom: 50px;
+
 }
 
 .lista-trabalhos__item a {

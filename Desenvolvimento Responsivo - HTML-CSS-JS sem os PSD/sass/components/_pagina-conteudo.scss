@@ -2,13 +2,19 @@
     padding: 15px;
     padding-top: 25px;
     padding-bottom: 25px;
+    overflow: auto;
+
 
     @media(min-width: $breakpoint-md) {
         overflow: auto;
         margin-left: 50px;
         margin-right: 50px;
-        max-height: 900px;
+
     }
+}
+
+.pagina-conteudo-2 {
+    overflow: auto;
 }
 
 .pagina-conteudo p {
