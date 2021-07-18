@@ -493,8 +493,8 @@ html {
   .img-left {
     float: left;
     padding: 9px 0 0 0;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -745,12 +745,13 @@ html {
 
 .pagina-conteudo {
   padding: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 150px;
+  padding-bottom: 100px;
   overflow: auto;
+  overflow-x: hidden;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .pagina-conteudo .pagina-conteudo-2 {
     margin: auto;
     padding-left: 130px;
@@ -758,11 +759,10 @@ html {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .pagina-conteudo .pagina-conteudo-2 {
-    margin: auto;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 150px;
+    padding-right: 140px;
   }
 }
 
@@ -847,10 +847,6 @@ html {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.pagina-conteudo {
-  padding: 25px 15px 25px 15px;
 }
 
 .pagina-conteudo p {
