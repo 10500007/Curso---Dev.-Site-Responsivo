@@ -576,26 +576,52 @@ html {
   background-color: #efecec;
   margin-left: -15px;
   margin-right: -15px;
-  padding: 40px 15px 40px 15px;
+  padding: 40px 15px 0px 15px;
   -webkit-box-shadow: 0px 3px 10px #000;
           box-shadow: 0px 3px 10px #000;
+  overflow: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.formulario_label {
+  padding-bottom: 5px;
 }
 
 .formulario_campo {
   width: 100%;
   border: 1px solid #c4c4c4;
   padding: 10px 5px;
+  margin-top: 5px;
 }
 
 .formulario_botao {
-  border: 3px solid red;
-  color: red;
+  border: 3px solid #f44242;
+  color: #f44242;
   background-color: #fff;
   border-radius: 15px;
   padding: 5px 20px;
   cursor: pointer;
   display: block;
   margin: auto;
+  -webkit-transform: translateY(-21px);
+          transform: translateY(-21px);
+}
+
+@media (min-width: 768px) {
+  .formulario_grupo {
+    width: 100%;
+  }
+  .formulario_grupo--esq {
+    float: left;
+    width: 49%;
+    margin-bottom: 5px;
+  }
+  .formulario_grupo--dir {
+    float: right;
+    width: 49%;
+    margin-bottom: 5px;
+  }
 }
 
 .logo {
@@ -629,6 +655,30 @@ html {
   position: relative;
   overflow: hidden;
   margin: 0 -15px -25px -15px;
+}
+
+@media (min-width: 450px) {
+  .mapa {
+    padding-bottom: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .mapa {
+    padding-bottom: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .mapa {
+    padding-bottom: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mapa {
+    padding-bottom: 25%;
+  }
 }
 
 .mapa iframe {
@@ -745,7 +795,7 @@ html {
 
 .pagina-conteudo {
   padding: 15px;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   overflow: auto;
   overflow-x: hidden;
@@ -917,6 +967,20 @@ img {
 .titulo__servicos {
   font-weight: bold;
   font-weight: 900;
+}
+
+.pagina-contato {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .pagina-contato {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 .cabecalho-home {
