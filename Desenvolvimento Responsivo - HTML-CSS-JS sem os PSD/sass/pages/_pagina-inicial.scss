@@ -78,6 +78,7 @@
 .home__titulo {
     text-align: center;
     text-transform: uppercase;
+    margin-top: 55px;
     margin-bottom: 55px;
 
     &::after {
@@ -93,4 +94,8 @@
     &--branco::after {
         background-color: #fff;
     }
+}
+
+.servicos{
+    margin-bottom: 40px;
 }

@@ -5,7 +5,9 @@
     overflow: auto;
     overflow-x: hidden;
 
-
+    &_subtitulo{
+        padding-bottom: 70px;
+    }
 
 
     @media(min-width: $breakpoint-md) {
