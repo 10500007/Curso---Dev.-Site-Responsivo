@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
@@ -68,7 +69,8 @@ h1 {
    * 2. Show the overflow in Edge and IE.
    */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -105,7 +107,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -211,9 +214,9 @@ select {
    * Correct the inability to style clickable types in iOS and Safari.
    */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -221,9 +224,9 @@ button,
    * Remove the inner border and padding in Firefox.
    */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -232,9 +235,9 @@ button::-moz-focus-inner,
    * Restore the focus styles unset by the previous rule.
    */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -252,7 +255,8 @@ fieldset {
    *    `fieldset` elements in all browsers.
    */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -284,9 +288,10 @@ textarea {
    * 1. Add the correct box sizing in IE 10.
    * 2. Remove the padding in IE 10.
    */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -295,8 +300,8 @@ textarea {
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -304,7 +309,7 @@ textarea {
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -314,7 +319,7 @@ textarea {
 /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -371,7 +376,7 @@ template {
 @font-face {
     font-family: "Source Sans Pro";
     src: url(../../source-sans-pro/SourceSansPro-Regular.otf);
-
+  
     font-weight: bold;
 }
 
@@ -386,41 +391,48 @@ template {
   font-family: "Source Sans Pro";
   src: url("source-sans-pro/source-sans-pro/SourceSansPro-Regular.otf");
 }
+
 @font-face {
   font-family: "Source Sans Pro";
   src: url("source-sans-pro/source-sans-pro/SourceSansPro-Regular.otf");
   font-weight: bold;
 }
+
 @font-face {
   font-family: "Source Sans Pro";
   src: url("source-sans-pro/source-sans-pro/SourceSansPro-BoldIt.otf");
   font-style: italic;
 }
+
 .cabecalho {
   background: #edeff1;
   margin: 0 -15px;
   position: fixed;
   width: 100%;
   /*
-  @media(max-width: $breakpoint-md) {
-      & {
-          height: 70px;
-      }
-  }
-  */
+    @media(max-width: $breakpoint-md) {
+        & {
+            height: 70px;
+        }
+    }
+    */
 }
+
 .cabecalho-home {
   padding: 150px;
 }
+
 @media (min-width: 768px) {
   .cabecalho {
     min-height: 100px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .cabecalho .logo {
     float: left;
     margin-bottom: 0px;
     margin-top: 20px;
+    -webkit-transition: all 400ms ease-out;
     transition: all 400ms ease-out;
   }
   .cabecalho .menu-principal__lista {
@@ -429,9 +441,11 @@ template {
     margin-top: 35px;
   }
 }
+
 @media (min-width: 768px) {
   .cabecalho .logo {
     margin-top: 18px;
+    -webkit-transition: all 400ms ease-out;
     transition: all 400ms ease-out;
   }
 }
@@ -447,23 +461,28 @@ html {
   padding-left: 15px;
   padding-right: 15px;
   overflow: auto;
+  -webkit-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
+
 @media (min-width: 576px) {
   .container {
     width: 540px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     width: 720px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 960px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
@@ -490,39 +509,47 @@ html {
   color: #fff;
   padding: 30px 0;
 }
+
 .depoimentos__item {
   padding: 0px 15px;
 }
+
 .depoimentos__img {
   display: block;
   margin: 0 auto;
-  box-shadow: 2px 2px 0 black;
+  -webkit-box-shadow: 2px 2px 0 black;
+          box-shadow: 2px 2px 0 black;
   margin-bottom: 30px;
 }
+
 .depoimentos__pessoa {
   text-align: center;
   font-weight: bold;
   font-style: italic;
 }
+
 .depoimentos__pessoa::before {
   content: "";
   border-left: 2.2px solid #fff;
   color: #fff;
   margin-right: 5px;
 }
+
 .depoimentos__texto {
   line-height: 23px;
   padding: 0px 8px;
 }
+
 .depoimentos__texto::before {
   background-image: url(imagens/img/aspas.png);
   background-repeat: no-repeat;
-  content: "";
+  content: '';
   display: inline-block;
   width: 25px;
   height: 23px;
   margin-right: 5px;
 }
+
 @media (min-width: 768px) {
   .depoimentos {
     padding: 150px 0px;
@@ -550,20 +577,24 @@ html {
   margin-left: -15px;
   margin-right: -15px;
   padding: 40px 15px 0px 15px;
-  box-shadow: 0px 3px 10px #000;
+  -webkit-box-shadow: 0px 3px 10px #000;
+          box-shadow: 0px 3px 10px #000;
   overflow: auto;
   margin-top: 80px;
   margin-bottom: 80px;
 }
+
 .formulario_label {
   padding-bottom: 5px;
 }
+
 .formulario_campo {
   width: 100%;
   border: 1px solid #c4c4c4;
   padding: 10px 5px;
   margin-top: 5px;
 }
+
 .formulario_botao {
   border: 3px solid #f44242;
   color: #f44242;
@@ -573,8 +604,10 @@ html {
   cursor: pointer;
   display: block;
   margin: auto;
-  transform: translateY(-21px);
+  -webkit-transform: translateY(-21px);
+          transform: translateY(-21px);
 }
+
 @media (min-width: 768px) {
   .formulario_grupo {
     width: 100%;
@@ -600,8 +633,10 @@ html {
   text-indent: -9999px;
   margin: 0;
   margin-left: 15px;
+  -webkit-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
+
 @media (max-width: 768px) {
   .logo {
     margin-top: 5px;
@@ -621,21 +656,25 @@ html {
   overflow: hidden;
   margin: 0 -15px -25px -15px;
 }
+
 @media (min-width: 450px) {
   .mapa {
     padding-bottom: 70%;
   }
 }
+
 @media (min-width: 768px) {
   .mapa {
     padding-bottom: 50%;
   }
 }
+
 @media (min-width: 992px) {
   .mapa {
     padding-bottom: 30%;
   }
 }
+
 @media (min-width: 1200px) {
   .mapa {
     padding-bottom: 25%;
@@ -667,25 +706,31 @@ html {
   top: 15px;
   right: 15px;
 }
+
 @media (min-width: 768px) {
   .menu-principal__btn {
     display: none;
   }
 }
+
 .menu-principal__lista {
   padding: 0%;
+  -webkit-transition: margin 300ms ease-out;
   transition: margin 300ms ease-out;
 }
+
 @media (min-width: 768px) {
   .menu-principal__lista li {
     display: inline-block;
     margin: 0px 10px;
   }
 }
+
 .menu-principal__lista li {
   margin-left: 15px;
   list-style: none;
 }
+
 .menu-principal__item {
   margin-bottom: 20px;
   display: block;
@@ -693,11 +738,14 @@ html {
   font-weight: bold;
   color: #343434;
   font-size: 18px;
+  -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
+
 .menu-principal__item--atual {
   color: #f44242;
 }
+
 @media (max-width: 767px) {
   .menu-principal--fechado .menu-principal__btn {
     background-position: 5px 5px;
@@ -752,9 +800,11 @@ html {
   overflow: auto;
   overflow-x: hidden;
 }
+
 .pagina-conteudo_subtitulo {
   padding-bottom: 70px;
 }
+
 @media (min-width: 768px) {
   .pagina-conteudo .pagina-conteudo-2 {
     margin: auto;
@@ -762,6 +812,7 @@ html {
     padding-right: 130px;
   }
 }
+
 @media (min-width: 1200px) {
   .pagina-conteudo .pagina-conteudo-2 {
     padding-left: 150px;
@@ -784,35 +835,42 @@ html {
 .rodape {
   padding: 0px 0px;
 }
+
 .rodape .logo {
   color: white;
   margin-bottom: 20px;
 }
+
 .rodape__linha-1 {
   background-color: #272525;
   padding: 15px 25px;
   background-image: url(imagens/img/rodape-bg.jpg);
   background-size: cover;
 }
+
 .rodape__linha-2 {
   background-color: black;
   text-align: center;
   color: white;
   padding: 15px;
 }
+
 .rodape_coluna {
   margin-top: 30px;
   color: #fff;
 }
+
 .rodape_titulo {
   border-bottom: 1px solid #fff;
   padding: 0 10px 10px 10px;
   font-size: 18px;
 }
+
 .rodape_lista {
   padding: 0%;
   list-style: none;
 }
+
 @media (min-width: 768px) {
   .rodape_coluna {
     float: left;
@@ -835,7 +893,7 @@ html {
 }
 
 .lista_item::before {
-  content: ">";
+  content: '>';
   margin-right: 8px;
   color: #f44242;
 }
@@ -856,36 +914,42 @@ img {
   text-align: center;
 }
 
+/*
 .lista-trabalhos {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .lista-trabalhos__item {
-  margin-left: -25px;
-  margin-right: -25px;
-  margin-bottom: 50px;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 50px;
 }
 
+
+
+
 .lista-trabalhos__item a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .lista-trabalhos__titulos {
-  color: black;
-  font-size: 18px;
-  margin-left: 15px;
-  border-left: 1px solid #000;
-  padding-left: 15px;
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid #000;
+    padding-left: 15px;
 }
 
 .margem_mapa {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
+*/
 .servico {
   padding: 30px 0px;
 }
+
 @media (min-width: 768px) {
   .servico {
     overflow: auto;
@@ -896,6 +960,7 @@ img {
   text-align: center;
   padding: 0px 15px;
 }
+
 @media (min-width: 768px) {
   .servico__item {
     float: left;
@@ -919,6 +984,7 @@ img {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 @media (min-width: 768px) {
   .pagina-contato {
     padding-left: 150px;
@@ -934,13 +1000,16 @@ img {
   padding: 50px 0px;
   padding-top: 150px;
 }
+
 .cabecalho-home__role {
   display: none;
 }
+
 .cabecalho-home__titulo {
   font-size: 30px;
   margin-bottom: 0;
 }
+
 .cabecalho-home__subtitulo {
   display: block;
   font-size: 15px;
@@ -949,6 +1018,7 @@ img {
   margin: auto;
   margin-top: 10px;
 }
+
 @media (min-width: 992px) {
   .cabecalho-home {
     height: 100vh;
@@ -978,6 +1048,7 @@ img {
     margin-left: -115px;
   }
 }
+
 @media (min-width: 1200px) {
   .cabecalho-home {
     background-image: url(imagens/img/cabecalho-home-bg-xl.jpg);
@@ -992,8 +1063,9 @@ img {
   margin-top: 55px;
   margin-bottom: 55px;
 }
+
 .home__titulo::after {
-  content: "";
+  content: '';
   display: block;
   width: 50px;
   height: 3px;
@@ -1001,6 +1073,7 @@ img {
   margin: 0px auto;
   margin-top: 15px;
 }
+
 .home__titulo--branco::after {
   background-color: #fff;
 }
@@ -1029,10 +1102,59 @@ img {
   color: black;
   font-size: 18px;
   margin-left: 15px;
-  border-left: 1px solid #000;
   padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .lista-trabalhos__item {
+    margin: auto;
+    float: left;
+    width: 45%;
+    height: auto;
+    margin-left: 10px;
+  }
+  .lista-trabalhos__img {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .lista-trabalhos__img {
+    margin: 0;
+    opacity: 1;
+  }
+  .lista-trabalhos__item {
+    margin-left: 0px;
+    margin: 0;
+    float: left;
+    width: 33.333%;
+    height: auto;
+    position: relative;
+    background-color: #f44242;
+  }
+  .lista-trabalhos__item:hover .lista-trabalhos__img {
+    opacity: 0.1;
+  }
+  .lista-trabalhos__item:hover .lista-trabalhos__titulos {
+    opacity: 1;
+  }
+  .lista-trabalhos__titulos {
+    font-size: 22px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0%;
+    border: none;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    color: #fff;
+    background: url(imagens/img/icone-olho.png) no-repeat bottom center;
+    padding-bottom: 35px;
+    opacity: 0;
+  }
 }
 
 .subtitulo_sobre-nos {
   padding-bottom: 70px;
 }
+/*# sourceMappingURL=estilo.css.map */
