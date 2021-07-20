@@ -3,7 +3,8 @@
     margin: 0 -15px;
     position: fixed;
     width: 100%;
-  
+    z-index: 1;
+
     &-home {
         padding: 150px;
     }

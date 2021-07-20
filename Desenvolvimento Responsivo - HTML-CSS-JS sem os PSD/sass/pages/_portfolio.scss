@@ -1,7 +1,19 @@
+.pagina-portifolio {
+    width: 102%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    margin-left: -15px;
+    overflow: auto;
+    transition: all 400ms ease-out;
+    z-index: 2;
+}
+
 .lista-trabalhos {
     list-style: none;
     padding: 0;
     overflow: hidden;
+
 
 
     &__item {
@@ -68,6 +80,7 @@
             height: auto;
             position: relative;
             background-color: $cor-principal;
+            margin-bottom: -3px;
 
             &:hover {
 
