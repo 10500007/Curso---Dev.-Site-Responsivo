@@ -1,9 +1,9 @@
 .pagina-portifolio {
-    width: 102%;
+    //width: 102%;
     padding-top: 100px;
     padding-bottom: 100px;
     margin: 0 auto;
-    margin-left: -15px;
+    //margin-left: -15px;
     overflow: auto;
     transition: all 400ms ease-out;
     z-index: 2;
@@ -17,8 +17,8 @@
 
 
     &__item {
-        margin-left: -25px;
-        margin-right: -25px;
+       // margin-left: -25px;
+       // margin-right: -25px;
         margin-bottom: 50px;
 
 
