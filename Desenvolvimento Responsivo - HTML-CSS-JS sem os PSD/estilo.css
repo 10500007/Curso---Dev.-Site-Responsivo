@@ -10,7 +10,7 @@ img {
 body {
   font-family: "Source Sans Pro";
   overflow-x: hidden;
-  width: 102%;
+  width: 100%;
   padding: 0;
   height: 100%;
 }
@@ -847,11 +847,13 @@ html {
   color: #f44242;
 }
 
+/*
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
+*/
 .pagina-conteudo p {
   color: #3a3a3a;
   line-height: 22px;
@@ -1046,17 +1048,22 @@ img {
   font-size: 18px;
   margin-left: 15px;
   padding-left: 15px;
+  content: "";
+  border-left: 2.5px solid black;
+  padding-left: 5px;
+}
+@media (max-width: 768px) {
+  .lista-trabalhos__img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (min-width: 768px) {
   .lista-trabalhos__item {
     margin: auto;
     float: left;
-    width: 45%;
+    width: 50%;
     height: auto;
-    margin-left: 10px;
-  }
-  .lista-trabalhos__img {
-    margin-left: 5px;
   }
 }
 @media (min-width: 992px) {

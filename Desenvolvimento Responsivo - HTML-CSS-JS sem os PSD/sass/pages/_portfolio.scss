@@ -34,6 +34,20 @@
         margin-left: 15px;
 
         padding-left: 15px;
+        content: "";
+            border-left: 2.5px solid black;
+            padding-left: 5px;
+
+       
+    }
+    
+    @media(max-width: $breakpoint-md) {
+
+        &__img{
+            width: 100%;
+            height: auto;
+        }
+        
     }
 
     @media(min-width: $breakpoint-md) {
@@ -43,17 +57,18 @@
         &__item {
             margin: auto;
             float: left;
-            width: 45%;
+            width: 50%;
             // margin-left: 5px;
             height: auto;
-            margin-left: 10px;
+           
 
 
         }
 
         &__img {
 
-            margin-left: 5px;
+        
+
         }
 
 
