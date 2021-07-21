@@ -10,7 +10,8 @@ img {
 body {
   font-family: "Source Sans Pro";
   overflow-x: hidden;
-  padding: 0 15px;
+  width: 102%;
+  padding: 0;
   height: 100%;
 }
 
@@ -398,14 +399,13 @@ template {
 }
 .cabecalho {
   background: #edeff1;
-  margin: 0 -15px;
   position: fixed;
-  width: 100%;
+  width: 101%;
   z-index: 1;
   /*
-  @media(max-width: $breakpoint-md) {
+  @media(max-width: $breakpoint-sm) {
       & {
-          height: 70px;
+        width: 100%;
       }
   }
   */
@@ -667,6 +667,12 @@ html {
   position: absolute;
   top: 15px;
   right: 15px;
+}
+@media (max-width: 768px) {
+  .menu-principal__btn {
+    margin-right: 5%;
+    top: 9px;
+  }
 }
 @media (min-width: 768px) {
   .menu-principal__btn {

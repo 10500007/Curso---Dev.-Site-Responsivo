@@ -1,8 +1,9 @@
 .cabecalho {
     background: rgb(237, 239, 241);
-    margin: 0 -15px;
+    //margin: 0 ;
     position: fixed;
-    width: 100%;
+    width: 101%;
+    
     z-index: 1;
 
     &-home {
@@ -10,9 +11,9 @@
     }
 
     /*
-    @media(max-width: $breakpoint-md) {
+    @media(max-width: $breakpoint-sm) {
         & {
-            height: 70px;
+          width: 100%;
         }
     }
     */

@@ -21,7 +21,10 @@
         right: 15px;
 
 
-
+        @media(max-width: $breakpoint-md){
+            margin-right: 5%;
+            top:9px
+        }
 
         @media(min-width: $breakpoint-md) {
             display: none;
