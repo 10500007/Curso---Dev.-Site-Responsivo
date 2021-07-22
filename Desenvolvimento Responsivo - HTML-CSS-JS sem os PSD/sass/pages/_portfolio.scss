@@ -6,8 +6,9 @@
     //margin-left: -15px;
     overflow: auto;
     transition: all 400ms ease-out;
-    z-index: 2;
     margin-right: -13px;
+    z-index: 2;
+
 }
 
 .lista-trabalhos {
@@ -18,8 +19,8 @@
 
 
     &__item {
-       // margin-left: -25px;
-       // margin-right: -25px;
+        // margin-left: -25px;
+        // margin-right: -25px;
         margin-bottom: 50px;
 
 
@@ -36,19 +37,19 @@
 
         padding-left: 15px;
         content: "";
-            border-left: 2.2px solid black;
-            padding-left: 5px;
+        border-left: 2.2px solid black;
+        padding-left: 5px;
 
-       
+
     }
-    
+
     @media(max-width: $breakpoint-md) {
 
-        &__img{
+        &__img {
             width: 100%;
             height: auto;
         }
-        
+
     }
 
     @media(min-width: $breakpoint-md) {
@@ -61,15 +62,13 @@
             width: 50%;
             // margin-left: 5px;
             height: auto;
-           
+
 
 
         }
 
         &__img {
-
-        
-
+            display: block;
         }
 
 
@@ -98,16 +97,21 @@
             height: auto;
             position: relative;
             background-color: $cor-principal;
-            margin-bottom: -3px;
+
+            overflow: hidden;
 
             &:hover {
 
                 .lista-trabalhos__img {
                     opacity: 0.1;
+                    transition: all 600ms ease-out;
+                    transform: scale(1.5);
+
                 }
 
                 .lista-trabalhos__titulos {
                     opacity: 1;
+                    transition: all 900ms ease-out;
                 }
 
 

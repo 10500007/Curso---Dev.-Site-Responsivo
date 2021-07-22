@@ -15,8 +15,9 @@
 
         //background-repeat: no-repeat;
         background-size: cover;
-
-
+        margin-right: -15px;
+        //padding-right: 55px;
+        //padding-left: 15px;
     }
 
     &__linha-2 {
@@ -24,6 +25,8 @@
         text-align: center;
         color: white;
         padding: 15px;
+        margin-right: -15px;
+        padding-left: 0px;
     }
 
     &_coluna {
