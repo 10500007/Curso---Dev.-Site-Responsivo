@@ -727,8 +727,8 @@ html {
 
 .menu-principal__lista {
   padding: 0%;
-  -webkit-transition: margin 300ms ease-out;
-  transition: margin 300ms ease-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -761,6 +761,8 @@ html {
 @media (max-width: 767px) {
   .menu-principal--fechado .menu-principal__btn {
     background-position: 5px 5px;
+    -webkit-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
   }
   .menu-principal--fechado .menu-principal__lista {
     margin: 0;

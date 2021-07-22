@@ -124,10 +124,14 @@
        var menu = document.querySelector('.menu-principal--fechado')
        menu.addEventListener('click', clicar)
 
-       function clicar(){     
-           menu.className = 'menu-principal menu-principal--fechad'
-           console.log(menu)
+       function clicar(){    
+
+        menu.classList.toggle('menu-principal--fechado')
+        console.log(menu)
        }
+
+
+
        /*
        function scrollTo(element){
         document.querySelector(element).scrollIntoView({behavior: "smooth"});

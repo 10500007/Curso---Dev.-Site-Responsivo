@@ -1,5 +1,6 @@
 .menu-principal {
 
+
     &__btn {
         display: block;
         width: 50px;
@@ -21,9 +22,9 @@
         right: 15px;
 
 
-        @media(max-width: $breakpoint-md){
+        @media(max-width: $breakpoint-md) {
             margin-right: 5%;
-            top:9px
+            top: 9px
         }
 
         @media(min-width: $breakpoint-md) {
@@ -35,10 +36,11 @@
     &__lista {
         // margin-left: 15px;
         padding: 0%;
-        transition: margin 300ms ease-out;
+        transition: all 500ms ease-in-out;
 
         @media(min-width: $breakpoint-md) {
             li {
+
                 display: inline-block;
                 margin: 0px 10px;
             }
@@ -70,10 +72,13 @@
 
     @media(max-width: $breakpoint-md - 1) {
         &--fechado {
+
+
+
             .menu-principal__btn {
                 // background-position: -47px 7px;
                 background-position: 5px 5px;
-
+                transition: all 100ms ease-out;
             }
 
             .menu-principal__lista {
@@ -81,6 +86,8 @@
                 height: 10px;
 
             }
+
+
 
             .menu-principal__item {
                 margin: 0;
