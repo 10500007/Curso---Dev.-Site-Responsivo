@@ -26,13 +26,15 @@
         
 });
     */
-  //Abrir e fechar menu com jquery //
+    //ready - Executa essa função so quando todos os elementos da páginas foram carregados
   $(document).ready(function(){
+    //Abrir e fechar menu com jquery //
     $('.menu-principal__btn').click(function(){
         $('.menu-principal').toggleClass('menu-principal--fechado')
 
     });
 
+    // Parte de slide de depoimentos
     $('.depoimentos__caixa').slick();
 
 });
@@ -48,5 +50,5 @@
     }, 1500);});
             
    
-    // Slide depoimentos
+
 
