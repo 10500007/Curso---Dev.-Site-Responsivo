@@ -27,10 +27,15 @@
 });
     */
   //Abrir e fechar menu com jquery //
+  $(document).ready(function(){
     $('.menu-principal__btn').click(function(){
         $('.menu-principal').toggleClass('menu-principal--fechado')
 
     });
+
+    $('.depoimentos__caixa').slick();
+
+});
 //fim menu
 
 //Scroll suave
@@ -43,3 +48,5 @@
     }, 1500);});
             
    
+    // Slide depoimentos
+
