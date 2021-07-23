@@ -1,6 +1,7 @@
 .menu-principal {
-
-
+    
+   
+    
     &__btn {
         display: block;
         width: 50px;
@@ -34,13 +35,15 @@
     }
 
     &__lista {
+       
         // margin-left: 15px;
+        
         padding: 0%;
-        transition: all 500ms ease-in-out;
+        transition: margin 500ms ease-out ;
 
         @media(min-width: $breakpoint-md) {
             li {
-
+               
                 display: inline-block;
                 margin: 0px 10px;
             }
@@ -55,6 +58,7 @@
     }
 
     &__item {
+        height: 20px;
         margin-bottom: 20px;
         display: block;
         //height: 20px;
@@ -83,7 +87,8 @@
 
             .menu-principal__lista {
                 margin: 0;
-                height: 10px;
+               //height: 10px;
+               // transition: all 400ms ease-out;
 
             }
 
