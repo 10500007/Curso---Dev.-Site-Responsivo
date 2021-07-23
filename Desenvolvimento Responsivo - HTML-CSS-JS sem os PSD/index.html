@@ -7,7 +7,7 @@
   
     <link rel="stylesheet" href="../Desenvolvimento Responsivo - HTML-CSS-JS sem os PSD/sass/estilo.css">
     <link rel="stylesheet" href="estilo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
   
     <title>Document</title>
 </head>
@@ -117,44 +117,8 @@
         
     </footer>
 
-   <script>
-
-
-
-       var menu = document.querySelector('.menu-principal--fechado')
-       menu.addEventListener('click', clicar)
-
-       function clicar(){    
-
-        menu.classList.toggle('menu-principal--fechado')
-        console.log(menu)
-       }
-
-
-
-       /*
-       function scrollTo(element){
-        document.querySelector(element).scrollIntoView({behavior: "smooth"});
-        }
-
-        document.querySelector('.cabecalho-home__role').addEventListener("click", function(event){
-        event.preventDefault();
-           
-
-        scrollTo('#servicos', 1000)
-
-        
-});
-    */
-
-    $('header a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
-    var id = $(this).attr('href'),
-    targetOffset = $(id).offset().top;
-    $('html, body').animate({
-    scrollTop: targetOffset - 100
-    }, 1500);});
-            
-   </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="codigo.js"></script>
 </body>
 </html>
