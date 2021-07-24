@@ -35,7 +35,11 @@
     });
 
     // Parte de slide de depoimentos
-    $('.depoimentos__caixa').slick();
+    $('.depoimentos__caixa').slick({
+      autoplay: true,
+      arrows: false,
+      dots: true
+    });
 
 });
 //fim menu

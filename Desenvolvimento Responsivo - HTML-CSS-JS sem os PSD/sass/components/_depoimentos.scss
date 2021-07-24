@@ -7,6 +7,11 @@
     margin-right: -15px;
     padding-right: 15px;
 
+    &__caixa {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
     &__item {
         padding: 0px 15px;
 
