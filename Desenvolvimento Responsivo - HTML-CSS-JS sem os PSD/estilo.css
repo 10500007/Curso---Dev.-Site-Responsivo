@@ -589,6 +589,13 @@ html {
   overflow-x: hidden;
 }
 
+label.error {
+  border-left: 3px solid #f44242;
+  padding-left: 5px;
+  margin-top: 10px;
+  color: #f44242;
+}
+
 .formulario {
   background-color: #efecec;
   margin-left: -15px;

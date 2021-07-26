@@ -2,6 +2,14 @@
     overflow-x: hidden;
 }
 
+label.error {
+    border-left: 3px solid $cor-principal;
+    padding-left: 5px;
+    margin-top: 10px;
+    color: $cor-principal;
+
+}
+
 .formulario {
     background-color: #efecec;
     margin-left: -15px;

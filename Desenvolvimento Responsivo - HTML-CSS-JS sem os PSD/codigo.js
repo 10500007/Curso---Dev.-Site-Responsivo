@@ -60,15 +60,35 @@ console.log(nome)
 
     $('.formulario').validate({
       rules: {
+        name_email: 'required',
+        areadetexto:'required',
+        name_nome:'required'
         
+        /*
+          name_email:{
+            required: true
+           
+          },
+          areadetexto: {
+            required:true
+          },
+          name_nome:{
+            required: true
+          }
+         */
+
+      },
+      messages: {
         name_email:{
-          required: true,
-          email: true
-        }/*,
+            required: 'Por favor informar um o email.',
+            email: 'Por favor inserir um email válido'
+        },
         areadetexto: {
-          required:true,
-          nome: true
-        }*/
+          required: 'Por favor digitar o texto.'
+        },
+        name_nome:{
+          required: 'Por favor inserir um nome.'
+        }
       }
     });
     
