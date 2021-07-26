@@ -23,6 +23,7 @@
 //------------------------------------------//
 
 //var botao_val = document.querySelector('.formulario_botao').name
+/*
 var botao = document.querySelector('input.formulario_botao')
 
 botao.addEventListener('click', valid)
@@ -40,7 +41,7 @@ console.log(nome)
  }
 
 
-
+*/
 //----------------------///
     //ready - Executa essa função so quando todos os elementos da páginas foram carregados
   $(document).ready(function(){
@@ -60,10 +61,14 @@ console.log(nome)
     $('.formulario').validate({
       rules: {
         
-        email:{
+        name_email:{
           required: true,
           email: true
-        }
+        }/*,
+        areadetexto: {
+          required:true,
+          nome: true
+        }*/
       }
     });
     
