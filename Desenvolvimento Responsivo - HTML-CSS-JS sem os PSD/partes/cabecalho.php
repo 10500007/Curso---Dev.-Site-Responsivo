@@ -31,33 +31,22 @@
             </button>
             <ul class="menu-principal__lista">
                 <!--menu-principal__item--atual-->
-                <li ><a class="menu-principal__item Home"href="index.php">Home</a></li>
+                <li ><a class="menu-principal__item <?php echo $titulo_pag == "Home" ? "menu-principal__item--atual":""?> "href="index.php">Home</a></li>
 
-                <li><a class="menu-principal__item Sobre" href="sobre.php">Sobre nós</a></li>
+                <li><a class="menu-principal__item <?php echo $titulo_pag == "Sobre nós" ? "menu-principal__item--atual":""?> " href="sobre.php">Sobre nós</a></li>
 
-                <li><a class="menu-principal__item" href="portfolio.php"> Portifólio</a></li>
+                <li><a class="menu-principal__item <?php echo $titulo_pag == "Portfólio" ? "menu-principal__item--atual":""?>" href="portfolio.php"> Portfólio</a></li>
 
-                <li><a class="menu-principal__item" href="contato.php">
+                <li><a class="menu-principal__item <?php echo $titulo_pag == "Contato" ? "menu-principal__item--atual":""?>" href="contato.php">
                 Contato</a></li>
 
             </ul>
         </nav>
     </div><!--Fim container-->
     </header>
-    <!--
+    
     <script>
 
-        var titu = document.querySelector('title').text
-        var menu_sel = document.querySelector('.Home').classList[1]
-        console.log(menu_sel)
-        console.log(titu)
-        
-        if(titu == "Design Responsivo | Home"){
-            menu_sel= 'menu-principal__item--atual'
-            console.log(menu_sel)
-         }
-         
-     
     </script>
 
-        -->
+      

@@ -1,6 +1,6 @@
 <?php 
     global $titulo_pag;
-    $titulo_pag = "Sobre";
+    $titulo_pag = "Sobre nós";
     include('partes/cabecalho.php');
     ?>
     
