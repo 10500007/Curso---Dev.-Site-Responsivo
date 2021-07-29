@@ -1,43 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link rel="stylesheet" href="../Desenvolvimento Responsivo - HTML-CSS-JS sem os PSD/sass/estilo.css">
-    <link rel="stylesheet" href="estilo.css">
+    <?php 
+    global $titulo_pag;
+    $titulo_pag = "Home";
+    include('partes/cabecalho.php');
+    ?>
     
-  
-    <title>Document</title>
-</head>
-<body>
-    <header class="cabecalho">
-        <div class="container"><!--Inicio container-->
-        <h1 class="logo">Design Responsivo</h1>
-        <nav class="menu-principal menu-principal--fechado">
-            <button class="menu-principal__btn">
-<<<<<<< HEAD
-                Abrir e fechar menu - teste mode teste
-=======
-                Abrir e fechar menu ----
->>>>>>> 2808353057d6c16931ad150e24614981c621dc37
-            </button>
-            <ul class="menu-principal__lista">
-                
-                <li ><a class="menu-principal__item menu-principal__item--atual"href="index.html">Home</a></li>
-
-                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
-
-                <li><a class="menu-principal__item" href="portfolio.html"> Portifólio</a></li>
-
-                <li><a class="menu-principal__item" href="contato.html">
-                Contato</a></li>
-
-            </ul>
-        </nav>
-    </div><!--Fim container-->
-    </header>
     <main>             
           <header class="cabecalho-home cnc">
               <h2 class="cabecalho-home__titulo">Desenvolvimento Responsivo</h2>
@@ -101,45 +67,7 @@
           </section><!--Fim Seção Depoimentos-->
 
     </main>
-    <footer class="rodape cnc">
-       
-        <div class="rodape__linha-1">
-            <div class="container"><!--Inicio container-->
-                <div class="rodape_coluna">
-                    <a href="index.html" class="logo logo--branco">Design Responsivo</a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima tenetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima tenetur </p>
-                </div>
-                    <div class="rodape_coluna">
-                        <h2 class="rodape_titulo">Social</h2>
-                        <ul class="rodape_lista">
-                            <li><a class="lista_item" href="https://twitter.com" target="_blank">Twitter</a></li>
-                            <li><a class="lista_item" href="https://facebook.com" target="_blank">Facebook</a></li>
-                            <li><a class="lista_item" href="https://twitter.com" target="_blank">Twitterrr</a></li>
-                            <li><a class="lista_item" href="https://facebook.com" target="_blank">Facebookkk</a></li>
-                        </ul>
-                    </div>            
-            
-                <div class="rodape_coluna ">
-                        <h2 class="rodape_titulo">Links</h2>
-                        <ul class="rodape_lista">                            
-                                <li><a class="lista_item" href="index.html">Home</a></li>                     
-                                <li><a class="lista_item" href="sobre.html">Sobre nós</a></li>                       
-                                <li><a class="lista_item" href="portfolio.html">Portifólio</a></li>
-                                <li><a class="lista_item" href="contato.html">Contato</a></li>
-                        
-                        </ul>
-                </div>
-        </div>
-        </div><!--fim container-->
-         <div class="rodape__linha-2 cnc">
-             &copy; Todos direitos reservados
-         </div>
-        
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
-    <script src="slick.min.js"></script> 
-    <script src="codigo.js"></script>
-   
+   <?php include('partes/rodape.php'); ?>
+  
 </body>
 </html>

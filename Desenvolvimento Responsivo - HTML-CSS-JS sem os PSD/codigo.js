@@ -1,5 +1,5 @@
 
-/*
+
   //Abrir e fechar menu com jS //
        var menu = document.querySelector('.menu-principal--fechado')
        menu.addEventListener('click', clicar)
