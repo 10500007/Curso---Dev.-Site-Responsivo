@@ -4,8 +4,12 @@
     include('partes/cabecalho.php');
 
     $nome ='';
+    $email ='';
+    $mensagem ='';
     if(isset($_POST['Enviar'])){
         $nome = $_POST['name_nome'];
+        $email = $_POST['name_email'];
+        $mensagem = $_POST['areadetexto'];
     }
     ?>
     
@@ -14,7 +18,9 @@
         <article>
             <header class="pagina-cabecalho">
                 <div class="container"><!--Inicio container-->
-                   <?php echo $nome ?>
+                   <?php echo $nome.'<br>'.$email.'<br>'.$mensagem
+                        
+                   ?>
                 <h1 class="pagina-cabecalho__titulo">contato</h1>
 
                 </div>
