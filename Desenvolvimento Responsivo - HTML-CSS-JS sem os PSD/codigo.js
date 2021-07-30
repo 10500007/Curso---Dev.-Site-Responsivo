@@ -1,7 +1,7 @@
 
 
   //Abrir e fechar menu com jS //
-       var menu = document.querySelector('.menu-principal--fechado')
+     /*  var menu = document.querySelector('.menu-principal--fechado')
        menu.addEventListener('click', clicar)
 
        function clicar(){    
@@ -9,7 +9,7 @@
         menu.classList.toggle('menu-principal--fechado')
         console.log(menu)
        }
-
+*/
        /*
        function scrollTo(element){
         document.querySelector(element).scrollIntoView({behavior: "smooth"});
