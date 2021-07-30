@@ -29,12 +29,14 @@
        </div>
        </div><!--fim container-->
         <div class="rodape__linha-2 cnc">
-            &copy; Todos direitos reservados
+            &copy; <?php echo date('Y')?> Todos direitos reservados
         </div>
        
    </footer>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
    <script src="slick.min.js"></script> 
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
    <script src="codigo.js"></script>
   

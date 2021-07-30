@@ -24,7 +24,12 @@
 <body>
     <header class="cabecalho">
         <div class="container"><!--Inicio container-->
+        <!--Parte para criar link em logo, em pagina que nao for a home. Usando if e else com delimitador de bloco-->
+        <?php if($titulo_pag == 'Home'): ?>
         <h1 class="logo">Design Responsivo</h1>
+        <?php else: ?>
+         <a class="logo" href="index.php"></a>  
+         <?php endif ?> 
         <nav class="menu-principal menu-principal--fechado">
             <button class="menu-principal__btn">
 

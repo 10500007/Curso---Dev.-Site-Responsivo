@@ -2,6 +2,11 @@
     global $titulo_pag;
     $titulo_pag = "Contato";
     include('partes/cabecalho.php');
+
+    $nome ='';
+    if(isset($_POST['Enviar'])){
+        $nome = $_POST['name_nome'];
+    }
     ?>
     
     <main>
@@ -9,14 +14,15 @@
         <article>
             <header class="pagina-cabecalho">
                 <div class="container"><!--Inicio container-->
-                   
+                   <?php echo $nome ?>
                 <h1 class="pagina-cabecalho__titulo">contato</h1>
+
                 </div>
             </header>
             <section>
                 <div class="container  pagina-contato"><!--Inicio container-->
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, porro et at corrupti esse,</p>
-                <form class="formulario" action="">
+                <form class="formulario" action="#" method="POST">
                     <div class="formulario_grupo formulario_grupo--esq">
                         <label class="formulario_label" for="nome">Nome </label>
                         <input class="formulario_campo" id="nome" type="text" name="name_nome">
