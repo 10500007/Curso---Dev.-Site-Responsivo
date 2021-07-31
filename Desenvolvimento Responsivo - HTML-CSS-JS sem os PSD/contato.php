@@ -6,11 +6,24 @@
     $nome ='';
     $email ='';
     $mensagem ='';
-    if(isset($_POST['Enviar'])){
+    $retorno_de = '';
+    if(isset($_POST['Enviar'])){        
         $nome = $_POST['name_nome'];
         $email = $_POST['name_email'];
         $mensagem = $_POST['areadetexto'];
-    }
+
+            if($nome == '' || $mensagem =='' || $email ==''){
+                $retorno_de = 'Verifique os campos e tente novamente';
+                
+            }else{
+                $retorno_de = 'ok';
+            }
+
+         }
+         
+       
+
+    
     ?>
     
     <main>
@@ -18,9 +31,13 @@
         <article>
             <header class="pagina-cabecalho">
                 <div class="container"><!--Inicio container-->
-                   <?php echo $nome.'<br>'.$email.'<br>'.$mensagem
+                   <!-- Fiz apenas para teste
+                <?php if($retorno_de == 'ok'): ?>
+                    <?php echo $nome.'<br>'.$email.'<br>'.$mensagem
                         
                    ?>
+                   <?php endif; ?>
+                fim teste-->
                 <h1 class="pagina-cabecalho__titulo">contato</h1>
 
                 </div>
@@ -28,7 +45,12 @@
             <section>
                 <div class="container  pagina-contato"><!--Inicio container-->
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, porro et at corrupti esse,</p>
+              
                 <form class="formulario" action="#" method="POST">
+                    <div class="form_erro_val">
+                        <?php echo '<p>'.$retorno_de.'</p>' ?>
+                    </div>
+                
                     <div class="formulario_grupo formulario_grupo--esq">
                         <label class="formulario_label" for="nome">Nome </label>
                         <input class="formulario_campo" id="nome" type="text" name="name_nome">
@@ -58,6 +80,8 @@
         </article>
     
     </main>
-    <?php include('partes/rodape.php'); ?>
+    
+  <?php include('partes/rodape.php'); ?> 
+                
 </body>
 </html>

@@ -58,13 +58,13 @@ console.log(nome)
       dots: true
     });
 
-    $('.formulario').validate({
+   /* $('.formulario').validate({
       rules: {
         name_email: 'required',
         areadetexto:'required',
         name_nome:'required'
         
-        /*
+        /*----------------//---------///
           name_email:{
             required: true
            
@@ -75,8 +75,8 @@ console.log(nome)
           name_nome:{
             required: true
           }
-         */
-
+         *///------------------------//
+          /*
       },
       messages: {
         name_email:{
@@ -91,9 +91,11 @@ console.log(nome)
         }
       }
     });
+    */
     
 
 });
+
 //fim menu
 
 //Scroll suave
