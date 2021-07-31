@@ -47,7 +47,7 @@
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, porro et at corrupti esse,</p>
               
                 <form class="formulario" action="#" method="POST">
-                    <div class="form_erro_val">
+                    <div class="formulario_erro">
                         <?php echo '<p>'.$retorno_de.'</p>' ?>
                     </div>
                 
