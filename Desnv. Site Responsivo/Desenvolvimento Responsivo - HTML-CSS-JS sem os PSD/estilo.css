@@ -597,6 +597,7 @@ label.error {
 }
 
 .formulario {
+  background-color: #a4d323;
   margin-left: -15px;
   margin-right: -15px;
   padding: 40px 15px 0px 15px;
@@ -653,7 +654,6 @@ label.error {
 }
 
 .logo {
-  background-image: url(img/logotipo-preto.png);
   background-repeat: no-repeat;
   display: block;
   width: 120px;

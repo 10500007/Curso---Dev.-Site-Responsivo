@@ -1,5 +1,5 @@
 .logo {
-    background-image: url(img/logotipo-preto.png);
+    //background-image: url(img/logotipo-preto.png);
     background-repeat: no-repeat;
     display: block;
     width: 120px;
@@ -11,7 +11,7 @@
 
     @media(max-width: $breakpoint-md) {
         margin-top: 5px;
-       
+
     }
 }
 
