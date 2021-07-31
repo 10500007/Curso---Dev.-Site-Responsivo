@@ -6,6 +6,7 @@
     $nome ='';
     $email ='';
     $mensagem ='';
+    $verifica = '';
     $retorno_de = '';
     if(isset($_POST['Enviar'])){        
         $nome = $_POST['name_nome'];
@@ -13,10 +14,26 @@
         $mensagem = $_POST['areadetexto'];
 
             if($nome == '' || $mensagem =='' || $email ==''){
-                $retorno_de = 'Verifique os campos e tente novamente';
+                //validando os campos
+                $verifica = 'erro';
+                $retorno_de = 'Verifique os campos e preencha novamente';
                 
             }else{
-                $retorno_de = 'ok';
+                //campos ok
+                $verifica = 'ok';
+                $retorno_de = 'Agradecemos pelo contato';
+                $mensagemEmail ='Nome:'. $nome . ' - ';
+                $mensagemEmail .= 'Email:' . $email . ' - ';
+                $mensagemEmail .= 'Mensagem:' . $mensagem;
+
+                    if(mail('felipe_benedito@hotmail.com','Mensagem de contato ', $mensagemEmail)){
+                        //email enviado
+                        $retorno_de = 'Sucesso';
+                    }else{
+                        //Email nao enviado se ocorrer algum problema na função email()
+                        $verifica = 'erro';
+                        $retorno_de = 'Houve algum erro';
+                    }
             }
 
          }
@@ -32,7 +49,7 @@
             <header class="pagina-cabecalho">
                 <div class="container"><!--Inicio container-->
                    <!-- Fiz apenas para teste
-                <?php if($retorno_de == 'ok'): ?>
+                <?php if($verifica == 'ok'): ?>
                     <?php echo $nome.'<br>'.$email.'<br>'.$mensagem
                         
                    ?>
@@ -46,11 +63,16 @@
                 <div class="container  pagina-contato"><!--Inicio container-->
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, porro et at corrupti esse,</p>
               
-                <form class="formulario" action="#" method="POST">
+                <form class="formulario" action="contato.php" method="POST">
+                    <?php if($verifica == 'erro'): ?>
                     <div class="formulario_erro">
-                        <?php echo '<p>'.$retorno_de.'</p>' ?>
+                        <?php echo $retorno_de ?>
                     </div>
-                
+                    <?php elseif($verifica == 'ok'): ?>
+                        <div class="formulario_certo">
+                        <?php echo $retorno_de ?>
+                        </div>
+                    <?php endif; ?>
                     <div class="formulario_grupo formulario_grupo--esq">
                         <label class="formulario_label" for="nome">Nome </label>
                         <input class="formulario_campo" id="nome" type="text" name="name_nome">

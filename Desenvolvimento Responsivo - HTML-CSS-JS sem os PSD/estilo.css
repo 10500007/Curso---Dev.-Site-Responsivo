@@ -491,7 +491,7 @@ label.error {
   color: #f44242; }
 
 .formulario {
-  background-color: #a4d323;
+  background-color: #efecec;
   margin-left: -15px;
   margin-right: -15px;
   padding: 40px 15px 0px 15px;
@@ -500,8 +500,23 @@ label.error {
   margin-top: 80px;
   margin-bottom: 80px; }
   .formulario_erro {
-    width: 100%;
-    margin: 0 auto; }
+    background: #e60505;
+    opacity: 0.91;
+    color: #edeff1;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 35px;
+    border-radius: 2px; }
+  .formulario_certo {
+    background: #115c02;
+    opacity: 0.91;
+    color: #edeff1;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 35px;
+    border-radius: 2px; }
   .formulario_label {
     padding-bottom: 5px; }
   .formulario_campo {
