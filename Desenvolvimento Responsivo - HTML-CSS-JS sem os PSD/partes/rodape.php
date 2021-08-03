@@ -35,8 +35,8 @@
    </footer>
 
    
-   <script src="js/slick.min.js"></script> 
+  <!-- <script src="js/slick.min.js"></script> 
    <script src="js/jquery.fancybox.min.js"></script>
    <script src="js/jquery.validate.min.js"></script>
-   <script src="js/codigo.js"></script>
-  
+   <script src="js/codigo.js"></script>-->
+  <script src="js/app.min.js"></script>
