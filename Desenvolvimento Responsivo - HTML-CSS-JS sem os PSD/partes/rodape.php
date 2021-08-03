@@ -34,7 +34,7 @@
        
    </footer>
 
-  
+   
    <script src="js/slick.min.js"></script> 
    <script src="js/jquery.fancybox.min.js"></script>
    <script src="js/jquery.validate.min.js"></script>

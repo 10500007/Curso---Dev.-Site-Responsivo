@@ -547,6 +547,7 @@ label.error {
         margin-bottom: 5px; } }
 
 .logo {
+  background-image: url(img/logotipo-preto.png);
   background-repeat: no-repeat;
   display: block;
   width: 120px;
